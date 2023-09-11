@@ -50,10 +50,8 @@
     (Ver pastas dedicadas)
 
 #################################
-- Listas Ligadas (Linked List)
-    * Sequencias lineares de Nodes, onde podem ser
-      acessados pelo index do item.
-
+- Arvores (tree)
+    *
 
 
 
