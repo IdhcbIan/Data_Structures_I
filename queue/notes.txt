@@ -1,0 +1,39 @@
+
+░██████╗░██╗░░░██╗███████╗██╗░░░██╗███████╗░░░░██╗███████╗██╗██╗░░░░░░█████╗░
+██╔═══██╗██║░░░██║██╔════╝██║░░░██║██╔════╝░░░██╔╝██╔════╝██║██║░░░░░██╔══██╗
+██║██╗██║██║░░░██║█████╗░░██║░░░██║█████╗░░░░██╔╝░█████╗░░██║██║░░░░░███████║
+╚██████╔╝██║░░░██║██╔══╝░░██║░░░██║██╔══╝░░░██╔╝░░██╔══╝░░██║██║░░░░░██╔══██║
+░╚═██╔═╝░╚██████╔╝███████╗╚██████╔╝███████╗██╔╝░░░██║░░░░░██║███████╗██║░░██║
+░░░╚═╝░░░░╚═════╝░╚══════╝░╚═════╝░╚══════╝╚═╝░░░░╚═╝░░░░░╚═╝╚══════╝╚═╝░░╚═╝
+
+-------------------------------------------
+
+  A queue is a type of data stucture in the form of (FIFO) First in First Out
+a queue is used to keep data that has to be processed in sequential form, that
+preserves the order of input. for exmaple sequential intructions of a program or 
+a CPU processes.
+-------------------------------------------
+  -> Creating a Queue!!
+
+  To create a queue, you have to make a front and a rear, initially both will point to 
+NULL, the node has a data and a pointer to next called Node*, Aq queue will be a collection
+of nodes...
+
+-------------------------------------------
+  -> Adding over the Queue!!
+
+  To add items to the node, we will have to check if its the first item, or not. if its
+the first then we make the front and rear pont to the same item, and this item point to NULL
+, if its not the first item, then the previous items pointer will point to the new node, 
+and the new rear will be made the new item.
+-------------------------------------------
+  -> Freeing up memory!!
+
+  We can dequeue elements, we will check if its empty, in that case we will do nothing
+if it has elements we will make the front the next element. and then we can acess the elements
+data.
+
+
+
+
+

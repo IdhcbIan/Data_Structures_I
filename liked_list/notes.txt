@@ -1,0 +1,69 @@
+██╗░░░░░██╗██╗░░██╗███████╗██████╗░
+██║░░░░░██║██║░██╔╝██╔════╝██╔══██╗
+██║░░░░░██║█████═╝░█████╗░░██║░░██║
+██║░░░░░██║██╔═██╗░██╔══╝░░██║░░██║
+███████╗██║██║░╚██╗███████╗██████╔╝
+╚══════╝╚═╝╚═╝░░╚═╝╚══════╝╚═════╝░
+
+██╗░░░░░██╗░██████╗████████╗░██████╗
+██║░░░░░██║██╔════╝╚══██╔══╝██╔════╝
+██║░░░░░██║╚█████╗░░░░██║░░░╚█████╗░
+██║░░░░░██║░╚═══██╗░░░██║░░░░╚═══██╗
+███████╗██║██████╔╝░░░██║░░░██████╔╝
+╚══════╝╚═╝╚═════╝░░░░╚═╝░░░╚═════╝░
+
+-------------------------------------------
+
+  A linked list is a form of making a sequencial, linear data structure where the data doent 
+need to be stored sequentialy, or even in the actual order in memory.
+
+-------------------------------------------
+
+Normal list
+[3, 5, 7, 9, 11]
+
+Liked list 
+[5, "", 9, "", 3]
+
+
+
+-------------------------------------------
+  -> Creating a linked list!!
+
+  A linked list has a root pointer, one of them is the 
+data you want to keep, the first element, then the second
+is the second pointer. The second pointer points to the
+second item that has another object and the pointer to the 
+next.
+
+
+-------------------------------------------
+  -> Iterating over the linked list!!
+
+  See that in the iteration portion that we can iterate useing a while,
+with the condition that the element is not NULL, and in every iteration
+of the loop we can make next the the current element we are talking about!!
+
+-------------------------------------------
+  -> Freeing up memory!!
+
+  We can Use a while loop with the same consition to go over the 
+list and free up element by element, and in turn "remove" the list from memory
+
+-------------------------------------------
+  -> Adding elements!!
+
+  See how we created a element, a node, then we made the next element of this node
+  NULL, when this is done, we iterate over to the end of the list, and add the node
+  we just created to its end, now addin both the new element, and the tail, wich is NULL!
+
+-------------------------------------------
+  -> Adding elements to the middle!!
+
+  Find the index you want, then iterate a counter, element by element, to that 
+index, once its done, make elem.x equal to the value you want!!
+
+
+
+
+

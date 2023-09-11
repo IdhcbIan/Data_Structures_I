@@ -1,0 +1,36 @@
+-----// Lista 2 //---------
+
+Respostas:
+
+
+----------------
+-> Problemas com clock
+
+4) 15999.998
+5) 6.4 * 10^10
+6) Indefinido---
+7) Indefinido---
+8) 0.0352
+
+----------------
+-> Equacoes de recorrencia
+
+9) 
+
+
+----------------
+-> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

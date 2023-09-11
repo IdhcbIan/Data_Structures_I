@@ -1,0 +1,42 @@
+░██████╗████████╗░█████╗░░█████╗░██╗░░██╗
+██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║░██╔╝
+╚█████╗░░░░██║░░░███████║██║░░╚═╝█████═╝░
+░╚═══██╗░░░██║░░░██╔══██║██║░░██╗██╔═██╗░
+██████╔╝░░░██║░░░██║░░██║╚█████╔╝██║░╚██╗
+╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝
+-------------------------------------------
+
+
+  A stack is a linear data structure that follows the Last In First Out (LIFO) principle, 
+meaning the last element added to the stack will be the first element removed from it. 
+Operations associated with a stack typically include push (to add an element) and pop 
+(to remove the top element).
+
+-------------------------------------------
+  -> Creating a Stack!!
+
+  To create a stack we will first create a node struct to then
+create the stack struct, that will simply have a node in it. the node, 
+just like the linked lists will have both a data, and a pointer called next, 
+witch initially is NULL
+
+-------------------------------------------
+  -> Adding over the Stack!!
+
+  We now create a function to pop into the stack, in witch we create a new node and then
+make the next of the new node, the latest node added, then we change the top node, of 
+the stack, to the newly added node!!
+-------------------------------------------
+  -> Removing a item, pop function!!
+
+  The pop function is the remove of the stack, remember we can only remove the top
+node, not the ones in the middle. The pop function will, if the top node is not NULL, 
+then we will make the first element the netx pointer of the previous first element, 
+we can see that in:
+
++ "s->top = s->top->next;"
+
+
+
+
+

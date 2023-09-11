@@ -1,0 +1,78 @@
+███████╗██████╗░░░███╗░░
+██╔════╝██╔══██╗░████║░░
+█████╗░░██║░░██║██╔██║░░
+██╔══╝░░██║░░██║╚═╝██║░░
+███████╗██████╔╝███████╗
+╚══════╝╚═════╝░╚══════╝
+-------------------------------
+
+- Qualquer algoritimo pode ser avaliado em termos de 
+numero de intrucoes
+
+- Um algoritimo eh o metodo(as intrucoes) que realisam 
+uma tarefa
+
+- podemos excrever um mesmo algoritimo de em qualquer 
+  linguagem de programcao
+
+- Ao escrever um programa pensamos no algoritimo, este 
+mesmo eh portatil e implementavel na utilidade que 
+foi projetado
+
+
+-----------// Como caucular o t de execucao //----------
+
+- Apenas podemos saber o tempo de execucao de um programae nao um algoritimo
+
+Podemos caucular o tempo de execucao 
+- empiricamente 
+- teoricamente
+
+- quando executamos de forma impirica ficamos 
+dependentes das condicoes as quais ele foi 
+executado
+
+- buscamos descobrir o tempo de um algoritimo sem a 
+nessecidade de executalo
+
+Veja um pseudocodigo
+
+Inicio
+declare soma_parcial <- 0;               - 1 Unidade de tempo
+para i <- 1 ate n faca                   - 2n + 2
+  soma_parcial <- soma_parcial +i *i*i;  - 4n
+  escreva(soma_parcial);                 - 1
+  fim
+
+Somando tudo temos que o algoritimo usa
+6n+6 ou O(n)
+
+----------// Generalisando //---------------------
+- Veja que as constantes desaparecem
+assim podemos apenas analisar as partes repetitivas do 
+nosso codigo, e buscaremos apenas nas partes em funcao de 'n'
+
+veja codigo 'sum.c' e veja o numero de intrucoes e como o tempo
+aumenta com o aumento de n
+
+eh muito importante perceber que um for loop dentro
+de outro for loop multiplica o n
+assim se temos dois for, de n repeticoes
+teremos qualquer intrucao realisada no for veses n^2
+
+veja no codigo interlaced_loops como com a entrada 3
+temos 3^2 repeticoes da intrucao printf
+
+
+
+----------// Notas finais //---------------------
+
+Email do Monitor - "vhugoac@usp.br"
+Telegram - @vhugoac
+
+
+find a way to count intructions of a program!!
+Fazer Lista2!!
+
+
+
