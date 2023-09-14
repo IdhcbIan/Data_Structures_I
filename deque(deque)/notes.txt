@@ -1,0 +1,92 @@
+██████╗░███████╗░██████╗░██╗░░░██╗███████╗
+██╔══██╗██╔════╝██╔═══██╗██║░░░██║██╔════╝
+██║░░██║█████╗░░██║██╗██║██║░░░██║█████╗░░
+██║░░██║██╔══╝░░╚██████╔╝██║░░░██║██╔══╝░░
+██████╔╝███████╗░╚═██╔═╝░╚██████╔╝███████╗
+╚═════╝░╚══════╝░░░╚═╝░░░░╚═════╝░╚══════╝
+-------------------------------------------
+
+
+  Deque stands for "double-ended queue." It is a data 
+structure that allows insertion and removal of elements 
+from both its ends, meaning you can push and pop from both 
+the front and the back.
+
+  Just like holding a pile of cards, you can only see and add
+elements in the front and the real of the pile.
+
+-------------------------------------------
+  -> Creating a Deque!!
+
+  To crete a deque, we will a node struct, with the data, and 
+two pointers, onde called prev one called next, and then the 
+deque struct, will have two pointers, one called front, one 
+called rear.
+
+when creating a new deque, both front and rear will be NULL, 
+because there is no elements in the deque. When creating a 
+node it will have both prev and next as NULL.
+
+-------------------------------------------
+  -> Adding over the Deque!!
+
+  When we want to add a new element to the deque, we will
+create a new node with the data, then if its the first element
+make both rear and front point to this node, or if its not 
+the first element, and we wan to add it to the front
+we will make the next pointer of the node, be the front, the 
+prev od the old front node the new temp node, and the new front
+will be the temp node.
+
+    temp->next = dq->front;
+    dq->front->prev = temp;
+    dq->front = temp;
+
+  If we want to add it to the back, then we will make the prev
+pointer point to the rear of the deque, the rear of the old 
+rear element will be the temp node, and the deque rear will be,
+the temp node.
+
+    temp->prev = dq->rear;
+    dq->rear->next = temp;
+    dq->rear = temp;
+
+-------------------------------------------
+  -> Removing a item from the deque!!
+
+  To delete an item, it can either me the only item, the rear
+one or the front one.
+
+  If its the only item, and we tried to remove it from the, 
+front, it means that the next of the front is NULL, and so we 
+make, dq->front, dq->front->next and make rear also NULL, 
+making the list empy, we do the oposite if there is only one 
+item,and we are removing from the back.
+
+  If we have more than one item, and we are removing from the 
+front, we make dq->front, dq->front->next, and then make prev
+be NULL, and then free the memory from the old node.
+
+    Node* temp = dq->front;
+    dq->front = dq->front->next;
+    } else {
+        dq->front->prev = NULL;
+    }
+    int data = temp->data;
+    free(temp);
+    return data;
+
+
+  If we want to remove from the back, and we have more whan 
+  one item, we will make:
+
+    Node* temp = dq->rear;
+    dq->rear = dq->rear->prev;
+    } else {
+        dq->rear->next = NULL;
+    }
+    int data = temp->data;
+    free(temp);
+    return data;
+
+
